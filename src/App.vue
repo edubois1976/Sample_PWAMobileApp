@@ -23,6 +23,7 @@
 
 <script>
 require('material-design-lite')
+require('vuejs-datetimepicker')
 export default {
   name: 'app',
   methods: {
@@ -37,6 +38,7 @@ export default {
 <style>
 
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://code.getmdl.io/1.2.1/material.blue-red.min.css');
 
 body {
