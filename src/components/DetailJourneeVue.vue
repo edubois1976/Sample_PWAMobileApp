@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>Suivi d'exploitation NEON.</p>
-    <datetime format="DD-MM-YYYY h:i:s" width="300px" name='dob'></datetime>
+    <date-picker v-model="time1" lang="fr" type="datetime" format="yyyy-MM-dd HH:mm:ss" confirm=true></date-picker>
     <ul class="neon-list-item mdl-list">
   <li class="mdl-list__item">
     <span class="mdl-list__item-primary-content">
@@ -37,10 +37,15 @@
 </template>
 
 <script>
-import datetime from 'vuejs-datetimepicker'
+import DatePicker from 'vue2-datepicker'
 
 export default {
-  components: { datetime }
+  components: { DatePicker },
+  data () {
+    return {
+      time1: new Date()
+    }
+  }
 }
 </script>
 

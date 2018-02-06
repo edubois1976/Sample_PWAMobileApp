@@ -23,7 +23,8 @@
 
 <script>
 require('material-design-lite')
-require('vuejs-datetimepicker')
+require('vue2-datepicker')
+
 export default {
   name: 'app',
   methods: {
